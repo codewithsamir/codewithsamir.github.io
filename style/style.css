@@ -1051,21 +1051,112 @@ color: blue;
 }
 /* end service section design form here  */
 /* start contactus section design form here  */
-.contact-contianer{
-    /* border: 2px solid red; */
-    padding: 20px;
-    width: 80%;
-    margin: 0 auto;
+.contatus-section{
+    /* background: red; */
+    background: url("../images/contact-us-bg.jpg");
+background-blend-mode: multiply;
+background-color: darkblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+   padding: 50px 0;
+
 }
-form{
-    padding: 50px;
-    background-color:var(--skbackground);
+.contacts-container{
+    /* border: 2px solid red; */
+    /* padding: 20px; */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid red; */
+    /* justify-content: center; */
+
+}
+.contact-us-image-box{
+    width: 600px;
+    /* border: 2px solid red; */
+
+}
+.contact-us-image-box img{
+    object-fit: cover;
+}
+.contact-form-container{
+    /* border: 2px solid red; */
+    width:500px;
+}
+.contact-form-container h2{
+    margin-bottom: 40px;
+}
+.contactus-link{
+    width: 200px;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* gap: 20px; */
+}
+.contactus-link button{
+    padding: 8px 20px;
+    margin: 20px 0 0 20px;
+    border: none;
     border-radius: 20px;
+    font-size: 1.2rem;
+       
+   }
+
+   .contactus-link a button{
+       /* padding: 10px; */
+       margin-bottom: 15px;
+       border: none;
+       font-size: 1.1rem;
+       border-radius: 10px;
+       width: 50px;
+       height: 50px;
+      /* display: block; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      overflow: hidden;
+      transition: all .2s linear;
+      
+   }
+   .contactus-link a button:hover{
+       width: 150px;
+   }
+   .contactus-link a button:hover span{
+       display: block;
+       
+   }
+   .contactus-link a button i{
+     font-size: 1.7rem;
+      
+   }
+   .contactus-link a button span {
+       display: none;
+   }
+form{
+
+    padding: 20px 50px;
+    /* background-color:var(--skbackground); */
+    /* background: white; */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5),-5px -5px 20px rgba(0, 0, 0, 0.5),inset 5px 5px 20px rgba(96, 93, 93, 0.5),
+    inset -5px -5px 20px rgba(96, 93, 93, 0.5);
+    border-radius: 20px;
+    /* border: 5px solid red; */
+    /* z-index: 10;
+    opacity: .5; */
 }
 form .input-box{
     /* border: 2px solid red; */
    width: 100%;
    margin: 20px 0;
+   
+}
+form .input-box label{
+text-transform: capitalize;
    
 }
 form .input-box input{
@@ -1076,7 +1167,18 @@ form .input-box input{
    color: white;
    margin-top: 10px;
    outline: none;
+   /* border-radius: 5px; */
+   border: none;
+   border-bottom: 3px solid white;
 
+}
+form .input-box input::placeholder{
+    color: rgba(255, 255, 255, 0.249);
+    font-weight: normal;
+}
+form .input-box textarea::placeholder{
+    color: rgba(255, 255, 255, 0.249);
+    font-weight: normal;
 }
 form .input-box textarea{
     padding: 10px;
@@ -1086,15 +1188,18 @@ form .input-box textarea{
    color: white;
    margin-top: 10px;
    resize: none;
-   height:200px;
+   height:150px;
    outline: none;
+   border: 1px solid white;
 }
 form .input-box button{
     padding: 10px;
     font-size: 1.2rem;
    width: 100%;
    outline: none;
-   
+   border-radius: 20px;
+   background: #017bfd;
+   border: none;
    /* color: white; */
    margin-top: 10px;   
 }

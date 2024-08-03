@@ -89,6 +89,22 @@
  
     
 }
+.contacts-container{
+width: 100%;
+gap:20px;
+justify-content: space-around;
+}
+
+.contactus-link{
+  width: unset;
+}
+.contact-us-image-box{
+    /* position: absolute; */
+    width: 400px;
+    /* border: 2px solid red; */
+
+
+}
 
 }
 @media screen and (max-width: 1200px){
@@ -255,6 +271,26 @@ order: -1;
 }
 
 
+@media screen and (max-width:1000px) {
+  
+    .contacts-container{
+        width: 100%;
+        gap:0px;
+        justify-content: center;
+        }
+        
+        .contactus-link{
+          /* width: 14rem; */
+        }
+       
+        .contact-us-image-box{
+            display:none;
+            
+            
+            }
+    
+}
+
 @media screen and (max-width:950px) {
     .ed-box{
         top: 0;
@@ -279,6 +315,7 @@ order: -1;
         }
     
 }
+
 
 @media screen and (max-width:900px) {
 
@@ -374,7 +411,13 @@ order: -1;
 }
 
 @media screen  and (max-width:750px) {
-
+    .service-box{
+        width: 100%;
+    }
+    .ser-left h3{
+  font-size: 1.8rem;
+    
+    }
     .mypro-oneline{
  flex-direction: column;
 }
@@ -392,6 +435,26 @@ order: -1;
  
     
 }
+}
+
+@media screen and (max-width:650px) {
+  
+    .contacts-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactus-link{
+        flex-direction: row;
+    }
+    .contactus-link a button:hover{
+        width: 50px;
+    }
+    .contactus-link a button:hover span{
+        display: none;
+        
+    }
+    
 }
 
 @media screen and (max-width:575px) {
@@ -496,7 +559,13 @@ order: -1;
         }
 }
 @media screen and (max-width:500px) {
-
+    .contact-form-container{
+        /* border: 2px solid red; */
+        width:100%;
+    }
+    .service-box{
+        width: 100%;
+    }
     .exp-box{
     width: 100%;
     height: auto;

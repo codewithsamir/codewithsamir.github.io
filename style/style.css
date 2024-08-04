@@ -36,6 +36,9 @@
     box-sizing: border-box;
 }
 
+html,body{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--backgroundcolor);
     color: var(--textcolor);
@@ -419,16 +422,22 @@ border: none;
 .about-btn a button:hover{
     width: 150px;
 }
+.about-btn a button:hover i{
+    color:white;
+}
 .about-btn a button:hover span{
     display: block;
+    color:white;
     
 }
 .about-btn a button i{
   font-size: 1.7rem;
+ 
    
 }
 .about-btn a button span {
     display: none;
+   
 }
 .email-show{
     display: flex;
@@ -458,6 +467,9 @@ font-family: "Edu AU VIC WA NT Hand", cursive;
 /* start education container design form here  */
 .education-section{
     padding: 20px;
+}
+.education-section .title_text{
+    margin-bottom: 50px;
 }
 .eduction-container{
     /* border: 2px solid red; */
@@ -930,15 +942,17 @@ height: 100px;
     flex-direction: column;
     user-select: none;
     border: 2px solid white;
+    color:white;
     /* gap: 3px; */
 }
 .mypro-box .info .view-icon i{
-
+color:white;
     transform: rotate(-45deg) translateX(7px) translateY(2px);
  
 }
 .mypro-box .info  .pro-name{
 width: 300px;
+color:white;
 /* color: black; */
 text-transform: capitalize;
   font-size: 2rem;
@@ -949,7 +963,7 @@ text-transform: capitalize;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #0000001a;
+    background-color: #1401e239;
     top: 0;
     left: 0;
 }
@@ -1032,6 +1046,7 @@ color: blue;
 .ser-right{
     /* border: 2px solid red; */
     height: 80px;
+    width: 80px;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -1086,6 +1101,11 @@ background-color: darkblue;
     /* border: 2px solid red; */
     width:500px;
 }
+.contact-form-container .title_text{
+    color: white;
+    /* border: 2px solid red; */
+    
+}
 .contact-form-container h2{
     margin-bottom: 40px;
 }
@@ -1126,6 +1146,10 @@ background-color: darkblue;
    .contactus-link a button:hover{
        width: 150px;
    }
+   .contactus-link a button:hover i{
+       
+       color:white;
+   }
    .contactus-link a button:hover span{
        display: block;
        
@@ -1157,6 +1181,7 @@ form .input-box{
 }
 form .input-box label{
 text-transform: capitalize;
+color: white;
    
 }
 form .input-box input{
@@ -1203,6 +1228,9 @@ form .input-box button{
    /* color: white; */
    margin-top: 10px;   
 }
+form .input-box button:hover{
+    color: white;
+}
 /* end contactus section design form here  */
 /* start footer section design form here  */
 .footer-section{
@@ -1210,8 +1238,28 @@ form .input-box button{
     text-align: center;
 }
 .footer-section p{
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-family: "ubuntu ", sans-serif;
 text-transform: capitalize;
 }
 /* end footer section design form here  */
+
+.icons-top{
+    width: 50px;
+    height: 50px;
+    background-color: #017bfd;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+.icons-top i{
+color: white;
+font-size: 1.5rem;
+
+}

@@ -455,7 +455,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove.to(".image-box img",{
-      top:"700px",
+      top:"800px",
       right:"500px",
       // duration:1,
       })
@@ -471,8 +471,8 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove2.to(".image-box img",{
-      top:"1770px",
-      right:"375px",
+      top:"1470px",
+      right:"400px",
       width:"250px"
       })
       
@@ -489,7 +489,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       
       startmove3.to(".image-box img",{
       top:"2500px",
-      right:"310px",
+      right:"320px",
       width:"350px"
       })
       
@@ -507,7 +507,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       
       startmove4.to(".image-box img",{
       top:"3200px",
-      right:"550px",
+      right:"600px",
       width:"200px"
       })
       
@@ -539,7 +539,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       
       startmove6.to(".image-box img",{
       top:"3800px",
-      right:"550px",
+      right:"600px",
       width:"200px"
       })
       
@@ -572,8 +572,8 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove8.to(".image-box img",{
-      top:"6800px",
-      right:"0px",
+      top:"7050px",
+      right:"50px",
       
       width:"400px"
       })
@@ -999,7 +999,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 const logo  = document.querySelector(".logo h1 span")
 
 const logotext = logo.innerText
-console.log(logotext.length);
+// console.log(logotext.length);
 let index = 1
 let continues = true
 
@@ -1008,7 +1008,7 @@ function typingEffect(){
  if(continues){
   if(index <= logotext.length){
     const newtext = logotext.slice(0,index)
-    console.log(newtext);
+    // console.log(newtext);
     logo.innerText = newtext
     index++;
     setTimeout(typingEffect,100)
@@ -1021,7 +1021,7 @@ function typingEffect(){
   if(index > 0){
     index--
     const newtext = logotext.slice(0,index)
-    console.log(newtext);
+    // console.log(newtext);
     logo.innerText = newtext
     
     setTimeout(typingEffect,200)

@@ -38,11 +38,18 @@
 
 html,body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background-color: var(--backgroundcolor);
     color: var(--textcolor);
     font-family: sans-serif;
+}
+section{
+    padding-bottom: 100px;
+}
+.sm{
+    transition: all .2s linear;
 }
 .lightmodes{
     display: none;
@@ -247,7 +254,7 @@ border: none;
 .right{
     /* background: radial-gradient(blue,lightblue,black); */
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: 2px solid red; */
 
    
@@ -256,6 +263,11 @@ border: none;
     width: 100%;
     height: 650px;
     z-index: 10;
+}
+.right .image-box img{
+position: absolute;
+
+
 }
 .extra-box{
     width: 95%;
@@ -336,7 +348,7 @@ border: none;
 }
 .title_text{
     text-align: center;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 50px 50px 50px;
     font-size: 3rem;
     text-transform: capitalize;
     font-family: "Titillium Web", sans-serif;
@@ -468,9 +480,9 @@ font-family: "Edu AU VIC WA NT Hand", cursive;
 .education-section{
     padding: 20px;
 }
-.education-section .title_text{
+/* .education-section .title_text{
     margin-bottom: 50px;
-}
+} */
 .eduction-container{
     /* border: 2px solid red; */
     padding: 30px 0;
@@ -557,6 +569,9 @@ font-family: "Edu AU VIC WA NT Hand", cursive;
     /* border: 2px solid red; */
     padding: 80px 20px;
 }
+/* .skills-sections .title_text{
+ margin-bottom: 40px;
+} */
 .sk-container{
     padding: 20px 0;
     display: flex;
@@ -658,6 +673,7 @@ align-items: center;
 
    
 }
+
 .center-sk{
     width: 350px;
     /* border: 2px solid red; */
@@ -665,7 +681,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     position: relative;
-    background:rgba(255, 5, 5, 0.228);
+    /* background:rgba(37, 37, 37, 0.228); */
     border-radius: 30px;
 }
 
@@ -1234,7 +1250,7 @@ form .input-box button:hover{
 /* end contactus section design form here  */
 /* start footer section design form here  */
 .footer-section{
-    padding: 40px;
+    padding:20px 40px;
     text-align: center;
 }
 .footer-section p{

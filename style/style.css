@@ -85,6 +85,9 @@ header{
     z-index: 100;
 
 }
+.logo{
+    width: 260px;
+}
 .logo h1{
     text-transform: capitalize;
     font-family: "Ubuntu", sans-serif;
@@ -406,7 +409,11 @@ position: absolute;
  border: none;
  border-radius: 20px;
  font-size: 1.2rem;
+ border: 2px solid var(--hovercolor);
     
+}
+.about-right button:hover{
+    color: white;
 }
 .about-btn{
     padding: 20px;
@@ -456,6 +463,7 @@ position: absolute;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* border: 2px solid red; */
     transform: rotate(90deg);
     position: absolute;
     top: 200px;
@@ -463,15 +471,18 @@ position: absolute;
 
     /* border: 2px solid red; */
 }
-.email-show p{
-font-size: 1.5rem;
+.email-show a p{
+font-size: 1.2rem;
 font-family: "Edu AU VIC WA NT Hand", cursive;
+font-weight: bold;
+color: var(--textcolor);
 }
 .line
 {
     width: 100px;
     height: 3px;
-    background: white
+    
+    background: var(--textcolor)
     ;
 }
 /* end about section design form here  */
@@ -515,20 +526,24 @@ font-family: "Edu AU VIC WA NT Hand", cursive;
     border-radius: 20px;
     position: relative;
     
-    top: -50px;
+    /* top: -50px; */
+    right: 350px;
+    top: 80px;
+    border: 1px solid white;
+
 }
 
-.ed-box:nth-child(3){
-    right: 350px;
-    top: -120px;
-}
+
 .ed-box:nth-child(2){
     left: 350px;
-    top: 80px;
+    top: -120px;
     flex-direction: row-reverse;
 
 }
-
+.ed-box:nth-child(3){
+    right: 0px;
+    top: -80px;
+}
 .ed-image{
     width: 280px;
     height: 150px;

@@ -177,7 +177,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove.to(".image-box img",{
-      top:"600px",
+      top:"700px",
       right:"680px",
       // duration:1,
       })
@@ -193,7 +193,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove2.to(".image-box img",{
-      top:"1500px",
+      top:"1350px",
       right:"480px",
       width:"250px"
       })
@@ -210,7 +210,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove3.to(".image-box img",{
-      top:"2280px",
+      top:"2350px",
       right:"430px",
       width:"350px"
       })
@@ -228,7 +228,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove4.to(".image-box img",{
-      top:"2900px",
+      top:"3050px",
       right:"670px",
       width:"200px"
       })
@@ -244,7 +244,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove5.to(".image-box img",{
-      top:"3250px",
+      top:"3370px",
       right:"370px",
       width:"200px"
       })
@@ -260,7 +260,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove6.to(".image-box img",{
-      top:"3550px",
+      top:"3670px",
       right:"670px",
       width:"200px"
       })
@@ -277,7 +277,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove7.to(".image-box img",{
-      top:"3850px",
+      top:"3950px",
       right:"370px",
       
       width:"200px"
@@ -294,7 +294,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove8.to(".image-box img",{
-      top:"6680px",
+      top:"6880px",
       right:"150px",
       
       width:"400px"

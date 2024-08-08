@@ -310,6 +310,7 @@ position: absolute;
 
 
 }
+
 .right .dis-skill:nth-child(1)
 {
     top:160px;
@@ -606,11 +607,38 @@ align-items: center;
 justify-content: center;
 
 }
+/* .skill-box .skill-content{
+    
+    width:240px;
+    margin-left: 20px;
+    height:80px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.st-line{
+    display:flex;
+    justify-content: space-between;
+}
+.description{
+    color:black;
+    margin:0;
+    font-size: .9rem;
+}
+.proficiency{
+    color:black;
+    margin:0;
+} */
 .sk-name{
     color: black;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-transform: capitalize;
     z-index: 1;
+    margin:0;
+    font-weight: 500;
+    font-family: "ubuntu", sans-serif;
 }
 .sk-box .skill-box {
     width: 100%;
@@ -803,7 +831,7 @@ align-items: center;
     background: white;
     height: 300px;
     color: black;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     /* margin-bottom: 20px; */
     position: relative;

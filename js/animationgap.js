@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove2.to(".image-box img",{
-      top:"1530px",
+      top:"1300px",
       right:"550px",
       width:"250px"
       })
@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
       startmove3.to(".image-box img",{
-      top:"2330px",
+      top:"2230px",
       right:"480px",
       width:"350px"
       })

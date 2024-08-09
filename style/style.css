@@ -12,6 +12,7 @@
     --blackcolor:black;
     --shadow2:10px 10px 20px rgba(63, 62, 62, 0.5),-10px -10px 20px rgba(63, 62, 62, 0.5);
 --skbackground :  rgb(91, 1, 1);
+--newlightcolor: #017bfd;
 }
 .darkmode{
     --backgroundcolor:rgb(230, 228, 228);
@@ -128,10 +129,11 @@ color: var(--hovertextcolor);
   
 }
 .dark-light-mode,.hamburger{
-background-color: var(--hovercolor);
+background-color: var(--newlightcolor);
 padding:10px 20px;
 border-radius: 10px 20px;
 cursor: pointer;
+
 }
 .dark-light-mode i,.hamburger i{
     font-size: 1.5rem;
@@ -844,7 +846,7 @@ align-items: center;
    height: 30px;
    border-radius: 50%;
    /* background: blue; */
-   border: 2px solid blue;
+   border: 2px solid var(--newlightcolor);
    background: white;
    z-index: 10;
    left: -95px;
@@ -860,7 +862,7 @@ align-items: center;
     position: absolute;
     width: 20px;
     height: 20px;
-    background: blue;
+    background: var(--newlightcolor);
     border-radius: 50%;
 
 
@@ -871,7 +873,7 @@ align-items: center;
     width: 4px;
     height: 285px;
 
-    background: blue;
+    background: var(--newlightcolor);
     left: -80px;
     top: 50%;
     /* transform: translateY(-50%); */
@@ -909,7 +911,7 @@ height: 100px;
 
 
 .exp-box .date{
-    color: blue;
+    color: var(--newlightcolor);
     margin: 5px 0;
 }
 .exp-box h2{
@@ -1030,6 +1032,12 @@ text-transform: capitalize;
 /* start service section design form here  */
 .service-section{
 padding: 50px ;
+background-image: url("https://images.pexels.com/photos/1555900/pexels-photo-1555900.jpeg?auto=compress&cs=tinysrgb&w=600");
+background-size: cover;
+background-position: center;
+background-blend-mode: multiply;
+background-color: rgb(2, 2, 73);
+background-attachment: fixed;
 }
 .service-container{
     padding: 20px ;
@@ -1051,18 +1059,18 @@ padding: 50px ;
 }
 .service-box:hover{
     /* color: blue; */
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid var(--newlightcolor);
 
 }
 .service-box:hover .ser-left h3{
-color: blue;
+color: var(--newlightcolor);
 
 }
 .service-box:hover .ser-img-box{
     display: block;
 }
 .service-box:hover .ser-right i{
-    color: blue;
+    color: var(--newlightcolor);
 
 }
 .ser-img-box{
@@ -1088,7 +1096,7 @@ color: blue;
 }
 
 .ser-left h3{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     /* font-weight: normal; */
     text-transform: capitalize;
     font-family: "ubuntu", sans-serif;
@@ -1257,11 +1265,12 @@ form .input-box input{
 
 }
 form .input-box input::placeholder{
-    color: rgba(255, 255, 255, 0.249);
+    color: rgba(255, 255, 255, 0.685);
     font-weight: normal;
 }
 form .input-box textarea::placeholder{
-    color: rgba(255, 255, 255, 0.249);
+    color: rgba(255, 255, 255, 0.685);
+
     font-weight: normal;
 }
 form .input-box textarea{
@@ -1316,6 +1325,10 @@ text-transform: capitalize;
     align-items: center;
     cursor: pointer;
     z-index: 10;
+    transition: all .3s linear;
+}
+.icons-top:hover{
+    transform:scale(1.2) translateZ(300px);
 }
 .icons-top i{
 color: white;

@@ -23,6 +23,12 @@ window.addEventListener("DOMContentLoaded",()=>{
           duration:0.5,  
       })
       
+
+let responsivegsap = gsap.matchMedia();
+
+responsivegsap.add("(max-width:1000px)",()=>{})
+
+
   
     if(window.innerWidth >= 1500){
     
@@ -996,7 +1002,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
 // typing text effect on logo
-const logo  = document.querySelector(".logo h1 span")
+const logo  = document.querySelector(".sm")
 
 const logotext = logo.innerText
 // console.log(logotext.length);

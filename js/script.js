@@ -69,7 +69,7 @@ openpdfbox.addEventListener("click",()=>{
     document.body.style.top = '0';
     document.body.style.left = '0';
     document.body.style.width = '100%';
-    document.body.style.height = '100%';
+    document.body.style.height = '100vh';
     document.body.style.overflow = 'hidden';
 })
 closepdf.addEventListener("click",()=>{

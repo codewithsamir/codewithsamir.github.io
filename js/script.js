@@ -84,7 +84,8 @@ closepdf.addEventListener("click",()=>{
 
    if (downloadbutton) {
         downloadbutton.addEventListener("click", () => {
-            downloadfile.download = "Blue Simple Professional CV Resume.pdf"; // Sets the filename for download
+            downloadfile.href = "myResume/myResume.pdf"; // Sets the filename for download
+            downloadfile.download = "myResume.pdf"; // Sets the filename for download
         });
     }
 

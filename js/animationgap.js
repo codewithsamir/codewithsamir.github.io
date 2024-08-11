@@ -24,154 +24,7 @@ window.addEventListener("DOMContentLoaded",()=>{
       })
       
 
-let responsivegsap = gsap.matchMedia();
-
-responsivegsap.add("(max-width:1000px)",()=>{})
-
-
-  
-    if(window.innerWidth >= 1500){
-    
-      
-      let startmove = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#aboutsection",
-          start:"0% 70%",
-          end:"20% 70%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove.to(".image-box img",{
-      top:"600px",
-      right:"780px",
-      // duration:1,
-      })
-      
-      let startmove2 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".education-section",
-          start:"20% 80%",
-          end:"30% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove2.to(".image-box img",{
-      top:"1300px",
-      right:"550px",
-      width:"250px"
-      })
-      
-      
-      let startmove3 = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#skillsection",
-          start:"10% 80%",
-          end:"20% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove3.to(".image-box img",{
-      top:"2230px",
-      right:"480px",
-      width:"350px"
-      })
-      
-      
-      
-      let startmove4 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:first-child",
-          start:"13% 80%",
-          end:"25% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove4.to(".image-box img",{
-      top:"3000px",
-      right:"720px",
-      width:"200px"
-      })
-      
-      let startmove5 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(2)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove5.to(".image-box img",{
-      top:"3350px",
-      right:"420px",
-      width:"200px"
-      })
-      
-      let startmove6 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(3)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove6.to(".image-box img",{
-      top:"3650px",
-      right:"720px",
-      width:"200px"
-      })
-      
-      
-      let startmove7 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(4)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove7.to(".image-box img",{
-      top:"3950px",
-      right:"420px",
-      
-      width:"200px"
-      })
-      
-      let startmove8 = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#contactsection",
-          start:"0% 80%",
-          end:"30% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove8.to(".image-box img",{
-      top:"6850px",
-      right:"150px",
-      
-      width:"400px"
-      })
-      
-      
-    }
-   else if(window.innerWidth >= 1400 && window.innerWidth < 1500 ){
-    
-      
+      // my image animation start form here   
       let startmove = gsap.timeline({
         scrollTrigger:{
           trigger:"#aboutsection",
@@ -191,15 +44,15 @@ responsivegsap.add("(max-width:1000px)",()=>{})
       let startmove2 = gsap.timeline({
         scrollTrigger:{
           trigger:".education-section",
-          start:"20% 80%",
-          end:"30% 80%",
+          start:"30% 80%",
+          end:"40% 80%",
           scrub:true,
           // markers:true,
         }
       })
       
       startmove2.to(".image-box img",{
-      top:"1350px",
+      top:"1450px",
       right:"480px",
       width:"250px"
       })
@@ -250,7 +103,7 @@ responsivegsap.add("(max-width:1000px)",()=>{})
       })
       
       startmove5.to(".image-box img",{
-      top:"3370px",
+      top:"3390px",
       right:"370px",
       width:"200px"
       })
@@ -266,7 +119,7 @@ responsivegsap.add("(max-width:1000px)",()=>{})
       })
       
       startmove6.to(".image-box img",{
-      top:"3670px",
+      top:"3690px",
       right:"670px",
       width:"200px"
       })
@@ -283,7 +136,7 @@ responsivegsap.add("(max-width:1000px)",()=>{})
       })
       
       startmove7.to(".image-box img",{
-      top:"3950px",
+      top:"3990px",
       right:"370px",
       
       width:"200px"
@@ -300,293 +153,565 @@ responsivegsap.add("(max-width:1000px)",()=>{})
       })
       
       startmove8.to(".image-box img",{
-      top:"6880px",
+      top:"6930px",
       right:"150px",
       
       width:"400px"
       })
       
-      
-    }
-   else if(window.innerWidth >= 1300 && window.innerWidth < 1400){
-    
-      
-      let startmove = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#aboutsection",
-          start:"0% 70%",
-          end:"20% 70%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove.to(".image-box img",{
-      top:"650px",
-      right:"550px",
-      // duration:1,
-      })
-      
-      let startmove2 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".education-section",
-          start:"20% 80%",
-          end:"30% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove2.to(".image-box img",{
-      top:"1600px",
-      right:"430px",
-      width:"250px"
-      })
-      
-      
-      let startmove3 = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#skillsection",
-          start:"10% 80%",
-          end:"20% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove3.to(".image-box img",{
-      top:"2390px",
-      right:"350px",
-      width:"350px"
-      })
-      
-      
-      
-      let startmove4 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:first-child",
-          start:"13% 80%",
-          end:"25% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove4.to(".image-box img",{
-      top:"3000px",
-      right:"600px",
-      width:"200px"
-      })
-      
-      let startmove5 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(2)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove5.to(".image-box img",{
-      top:"3330px",
-      right:"320px",
-      width:"200px"
-      })
-      
-      let startmove6 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(3)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove6.to(".image-box img",{
-      top:"3630px",
-      right:"600px",
-      width:"200px"
-      })
-      
-      
-      let startmove7 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(4)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove7.to(".image-box img",{
-      top:"3930px",
-      right:"310px",
-      
-      width:"200px"
-      })
-      
-      let startmove8 = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#contactsection",
-          start:"0% 80%",
-          end:"30% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove8.to(".image-box img",{
-      top:"6680px",
-      right:"80px",
-      
-      width:"400px"
-      })
-      
-      
-    }
-    else if(window.innerWidth >= 1200 && window.innerWidth < 1300){
-    
-      
-      let startmove = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#aboutsection",
-          start:"0% 70%",
-          end:"20% 70%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove.to(".image-box img",{
-      top:"800px",
-      right:"500px",
-      // duration:1,
-      })
-      
-      let startmove2 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".education-section",
-          start:"20% 80%",
-          end:"30% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove2.to(".image-box img",{
-      top:"1470px",
-      right:"400px",
-      width:"250px"
-      })
-      
-      
-      let startmove3 = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#skillsection",
-          start:"10% 80%",
-          end:"20% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove3.to(".image-box img",{
-      top:"2500px",
-      right:"320px",
-      width:"350px"
-      })
-      
-      
-      
-      let startmove4 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:first-child",
-          start:"13% 80%",
-          end:"25% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove4.to(".image-box img",{
-      top:"3200px",
-      right:"600px",
-      width:"200px"
-      })
-      
-      let startmove5 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(2)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove5.to(".image-box img",{
-      top:"3490px",
-      right:"260px",
-      width:"200px"
-      })
-      
-      let startmove6 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(3)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove6.to(".image-box img",{
-      top:"3800px",
-      right:"600px",
-      width:"200px"
-      })
-      
-      
-      let startmove7 = gsap.timeline({
-        scrollTrigger:{
-          trigger:".exp-box:nth-child(4)",
-          start:"50% 75%",
-          end:"60% 75%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove7.to(".image-box img",{
-      top:"4090px",
-      right:"260px",
-      
-      width:"200px"
-      })
-      
-      let startmove8 = gsap.timeline({
-        scrollTrigger:{
-          trigger:"#contactsection",
-          start:"0% 80%",
-          end:"30% 80%",
-          scrub:true,
-          // markers:true,
-        }
-      })
-      
-      startmove8.to(".image-box img",{
-      top:"7050px",
-      right:"50px",
-      
-      width:"400px"
-      })
-      
-      
-    }
-    else if(window.innerWidth >= 1100 && window.innerWidth < 1200){
+     
+
+let responsivegsap = gsap.matchMedia();
+
+responsivegsap.add("(max-width:1385px)",()=>{
+  let startmove = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#aboutsection",
+            start:"0% 70%",
+            end:"20% 70%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove.to(".image-box img",{
+        top:"750px",
+        right:"620px",
+        // duration:1,
+        })
+        
+        let startmove2 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".education-section",
+            start:"20% 80%",
+            end:"30% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove2.to(".image-box img",{
+        top:"1470px",
+        right:"460px",
+        width:"250px"
+        })
+        
+        
+        let startmove3 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#skillsection",
+            start:"10% 80%",
+            end:"20% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove3.to(".image-box img",{
+        top:"2420px",
+        right:"400px",
+        width:"350px"
+        })
+        
+        
+        
+        let startmove4 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:first-child",
+            start:"13% 80%",
+            end:"25% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove4.to(".image-box img",{
+        top:"3150px",
+        right:"640px",
+        width:"200px"
+        })
+        
+        let startmove5 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(2)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove5.to(".image-box img",{
+        top:"3470px",
+        right:"330px",
+        width:"200px"
+        })
+        
+        let startmove6 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(3)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove6.to(".image-box img",{
+        top:"3780px",
+        right:"630px",
+        width:"200px"
+        })
+        
+        
+        let startmove7 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(4)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove7.to(".image-box img",{
+        top:"4080px",
+        right:"330px",
+        
+        width:"200px"
+        })
+        
+        let startmove8 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#contactsection",
+            start:"0% 80%",
+            end:"30% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove8.to(".image-box img",{
+        top:"6970px",
+        right:"100px",
+        
+        width:"400px"
+        })
+  
+})
+responsivegsap.add("(max-width:1325px)",()=>{
+  let startmove = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#aboutsection",
+            start:"0% 70%",
+            end:"20% 70%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove.to(".image-box img",{
+        top:"750px",
+        right:"580px",
+        // duration:1,
+        })
+        
+        let startmove2 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".education-section",
+            start:"20% 80%",
+            end:"50% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove2.to(".image-box img",{
+        top:"1480px",
+        right:"430px",
+        width:"240px"
+        })
+        
+        
+        let startmove3 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#skillsection",
+            start:"10% 80%",
+            end:"50% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove3.to(".image-box img",{
+        top:"2420px",
+        right:"380px",
+        width:"350px"
+        })
+        
+        
+        
+        let startmove4 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:first-child",
+            start:"13% 80%",
+            end:"25% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove4.to(".image-box img",{
+        top:"3150px",
+        right:"640px",
+        width:"200px"
+        })
+        
+        let startmove5 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(2)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove5.to(".image-box img",{
+        top:"3470px",
+        right:"330px",
+        width:"200px"
+        })
+        
+        let startmove6 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(3)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove6.to(".image-box img",{
+        top:"3780px",
+        right:"630px",
+        width:"200px"
+        })
+        
+        
+        let startmove7 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(4)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove7.to(".image-box img",{
+        top:"4080px",
+        right:"330px",
+        
+        width:"200px"
+        })
+        
+        let startmove8 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#contactsection",
+            start:"0% 80%",
+            end:"30% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove8.to(".image-box img",{
+        top:"6970px",
+        right:"100px",
+        
+        width:"400px"
+        })
+  
+})
+responsivegsap.add("(max-width:1280px)",()=>{
+  let startmove = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#aboutsection",
+            start:"0% 70%",
+            end:"20% 70%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove.to(".image-box img",{
+        top:"750px",
+        right:"550px",
+        // duration:1,
+        })
+        
+        let startmove2 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".education-section",
+            start:"20% 80%",
+            end:"50% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove2.to(".image-box img",{
+        top:"1560px",
+        right:"425px",
+        width:"240px"
+        })
+        
+        
+        let startmove3 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#skillsection",
+            start:"10% 80%",
+            end:"50% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove3.to(".image-box img",{
+        top:"2520px",
+        right:"360px",
+        width:"350px"
+        })
+        
+        
+        
+        let startmove4 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:first-child",
+            start:"13% 80%",
+            end:"25% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove4.to(".image-box img",{
+        top:"3250px",
+        right:"640px",
+        width:"200px"
+        })
+        
+        let startmove5 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(2)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove5.to(".image-box img",{
+        top:"3570px",
+        right:"305px",
+        width:"200px"
+        })
+        
+        let startmove6 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(3)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove6.to(".image-box img",{
+        top:"3850px",
+        right:"630px",
+        width:"200px"
+        })
+        
+        
+        let startmove7 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(4)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove7.to(".image-box img",{
+        top:"4140px",
+        right:"305px",
+        
+        width:"200px"
+        })
+        
+        let startmove8 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#contactsection",
+            start:"0% 80%",
+            end:"30% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove8.to(".image-box img",{
+        top:"7070px",
+        right:"100px",
+        
+        width:"400px"
+        })
+  
+})
+responsivegsap.add("(max-width:1240px)",()=>{
+  let startmove = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#aboutsection",
+            start:"0% 70%",
+            end:"20% 70%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove.to(".image-box img",{
+        top:"750px",
+        right:"520px",
+        // duration:1,
+        })
+        
+        let startmove2 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".education-section",
+            start:"20% 80%",
+            end:"50% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove2.to(".image-box img",{
+        top:"1660px",
+        right:"405px",
+        width:"240px"
+        })
+        
+        
+        let startmove3 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#skillsection",
+            start:"10% 80%",
+            end:"50% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove3.to(".image-box img",{
+        top:"2550px",
+        right:"340px",
+        width:"350px"
+        })
+        
+        
+        
+        let startmove4 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:first-child",
+            start:"13% 80%",
+            end:"25% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove4.to(".image-box img",{
+        top:"3255px",
+        right:"640px",
+        width:"200px"
+        })
+        
+        let startmove5 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(2)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove5.to(".image-box img",{
+        top:"3600px",
+        right:"290px",
+        width:"200px"
+        })
+        
+        let startmove6 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(3)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove6.to(".image-box img",{
+        top:"3920px",
+        right:"600px",
+        width:"200px"
+        })
+        
+        
+        let startmove7 = gsap.timeline({
+          scrollTrigger:{
+            trigger:".exp-box:nth-child(4)",
+            start:"50% 75%",
+            end:"60% 75%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove7.to(".image-box img",{
+        top:"4220px",
+        right:"280px",
+        
+        width:"200px"
+        })
+        
+        let startmove8 = gsap.timeline({
+          scrollTrigger:{
+            trigger:"#contactsection",
+            start:"0% 80%",
+            end:"30% 80%",
+            scrub:true,
+            // markers:true,
+          }
+        })
+        
+        startmove8.to(".image-box img",{
+        top:"7070px",
+        right:"100px",
+        
+        width:"400px"
+        })
+  
+})
+
+
+
+  
+ if(window.innerWidth >= 1100 && window.innerWidth < 1200){
     
       
       let startmove = gsap.timeline({
@@ -957,7 +1082,7 @@ responsivegsap.add("(max-width:1000px)",()=>{})
       })
       
       startmove.to(".image-box img",{
-      top:"1500px",
+      top:"1480px",
       right:"-30px",
       // duration:1,
       })
@@ -982,7 +1107,7 @@ responsivegsap.add("(max-width:1000px)",()=>{})
       })
       
       startmove.to(".image-box img",{
-      top:"1600px",
+      top:"1580px",
       right:"-30px",
       // duration:1,
       })

@@ -57,6 +57,8 @@ closenavbar.addEventListener("click",()=>{
 const closepdf = document.querySelector(".closepfd")
 const openpdfbox = document.querySelector("#myresumeopen")
 const pdfbox = document.querySelector(".myresumebox")
+const downloadbutton = document.querySelector("#downloadbutton")
+const downloadfile = document.querySelector("#downloadfile")
 
 
 
@@ -80,8 +82,11 @@ closepdf.addEventListener("click",()=>{
     document.body.style.overflow = '';
 })
 
-
-
+   if (downloadbutton) {
+        downloadbutton.addEventListener("click", () => {
+            downloadfile.download = "Blue Simple Professional CV Resume.pdf"; // Sets the filename for download
+        });
+    }
 
 // for project 
 

@@ -106,7 +106,10 @@ if(index === index2){
     box.style.transition = "top 0.3s ease"; // Optional: for smooth animation
     box.style.top = "0px"; // Slide in from the top
 }
-
+else{
+    box.style.transition = "top 0.3s ease"; // Optional: for smooth animation
+    box.style.top = "100%"; // Slide in from the top 
+}
             
            
                

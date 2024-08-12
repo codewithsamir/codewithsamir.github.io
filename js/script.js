@@ -84,7 +84,7 @@ closepdf.addEventListener("click",()=>{
 
    if (downloadbutton) {
         downloadbutton.addEventListener("click", () => {
-            downloadfile.href = "https://drive.google.com/file/d/1u6OXa25ZX9bVykIy3_WSBgR4tiB4sx9I/view?usp=drive_link"; // Sets the filename for download
+            downloadfile.href = "https://drive.google.com/file/d/1u6OXa25ZX9bVykIy3_WSBgR4tiB4sx9I/view?usp=sharing"; // Sets the filename for download
             
         });
     }
